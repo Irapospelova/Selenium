@@ -1,21 +1,5 @@
 # Selenium
-image: Ubuntu  # образ для сборки
+[![Build status](https://ci.appveyor.com/api/projects/status/239x030v9t08kkuy?svg=true)](https://ci.appveyor.com/project/Irapospelova/selenium)
 
-stack: jdk 11  # версия JDK
-
-branches:
-  only:
-    - main  # ветка git
-
-build: off  # будем использовать свой скрипт сборки
-
-install:
-  # запускаем SUT (& означает, что в фоновом режиме не блокируем терминал для запуска тестов)
-  - java -jar ./artifacts/app-mbank.jar &
-  - chmod +x gradlew
-
-build_script:
-  - ./gradlew test --info # запускаем тест, флаг --info позволяет выводить больше информации
-  - chmod +x gradlew
 
 
