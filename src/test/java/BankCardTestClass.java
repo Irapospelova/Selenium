@@ -20,8 +20,9 @@ public class BankCardTestClass {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--disable-dev-shm-usage");
         options.addArguments("--no-sandbox");
-       // options.addArguments("--headless");
+        options.addArguments("--headless");
         driver = new ChromeDriver(options);
+        driver.get("http://localhost:9999");
     }
 
     @AfterEach
@@ -33,12 +34,12 @@ public class BankCardTestClass {
     @Test
     public void shouldValidateInputs() {
         driver.get("http://localhost:9999");
-        driver.findElement(By.cssSelector("[data-test-id=name]input")).sendKeys("Федерико-Федерикович Феллини");
-        driver.findElement(By.cssSelector("[data-test-id=phone]input")).sendKeys("+12345678910");
-        driver.findElement(By.cssSelector("[data-test-id=agreement]input")).click();
-        driver.findElement(By.cssSelector("[type=button]")).click();
+        driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Федерико-Федерикович Феллини");
+        driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+12345678910");
+        driver.findElement(By.cssSelector("[data-test-id=agreement]")).click();
+        driver.findElement(By.cssSelector("button.button")).click();
         var actualText = driver.findElement(By.cssSelector("[data-test-id=order-success]")).getText().trim();
-        assertEquals("Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время.", actualText.trim());
+        assertEquals("Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время.", actualText);
 
 
     }
