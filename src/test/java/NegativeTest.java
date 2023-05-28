@@ -44,4 +44,13 @@ public class NegativeTest {
 
 
     }
+    @Test
+    public void shouildFailEmptyPhone() {
+        driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Федерико");
+        driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("null");
+        driver.findElement(By.cssSelector("[data-test-id=agreement]")).click();
+        driver.findElement(By.cssSelector("[type=button]")).click();
+        assertEquals("Телефон указан неверно. Должно быть 11 цифр, например, +79012345678.", driver.findElement(By.cssSelector("[data-test-id=phone].input_invalid .input__sub")).getText().trim());
+    }
 }
+
