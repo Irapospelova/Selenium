@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="504b98d1-6ca4-4b62-86d7-5b05209a1b4e" name="Changes" comment="Negative test with the phone passed">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="504b98d1-6ca4-4b62-86d7-5b05209a1b4e" name="Changes" comment="Points 1,2,4 fixed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/driver/win/chromedriver.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BankCardTestClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BankCardTestClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/NegativeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/NegativeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,6 +17,16 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view />
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -60,8 +66,8 @@
       <recent name="C:\Users\irapo\Selenium\artifacts" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.NegativeTest.shouildFailEmptyPhone">
-    <configuration name="BankCardTestClass" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.NegativeTest">
+    <configuration name="NegativeTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -74,30 +80,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;BankCardTestClass&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="BankCardTestClass.shouldValidateInputs" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--debug" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;BankCardTestClass.shouldValidateInputs&quot;" />
+            <option value="&quot;NegativeTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -130,7 +113,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="NegativeTest.shouldFailInvalidName" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="NegativeTest.shouldFailEmptyCheckbox" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -143,7 +126,53 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;NegativeTest.shouldFailInvalidName&quot;" />
+            <option value="&quot;NegativeTest.shouldFailEmptyCheckbox&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="NegativeTest.shouldFailEmptyName" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;NegativeTest.shouldFailEmptyName&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="NegativeTest.shouldFailInvalidPhone" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;NegativeTest.shouldFailInvalidPhone&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -155,10 +184,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.NegativeTest" />
+        <item itemvalue="Gradle.NegativeTest.shouldFailInvalidPhone" />
+        <item itemvalue="Gradle.NegativeTest.shouldFailEmptyName" />
+        <item itemvalue="Gradle.NegativeTest.shouldFailEmptyCheckbox" />
         <item itemvalue="Gradle.NegativeTest.shouildFailEmptyPhone" />
-        <item itemvalue="Gradle.NegativeTest.shouldFailInvalidName" />
-        <item itemvalue="Gradle.BankCardTestClass.shouldValidateInputs" />
-        <item itemvalue="Gradle.BankCardTestClass" />
       </list>
     </recent_temporary>
   </component>
@@ -220,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685295243035</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Points 1,2,4 fixed">
+      <created>1685298273043</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1685298273043</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -241,6 +278,7 @@
     <MESSAGE value="Positive test" />
     <MESSAGE value="Negative test passed" />
     <MESSAGE value="Negative test with the phone passed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Negative test with the phone passed" />
+    <MESSAGE value="Points 1,2,4 fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Points 1,2,4 fixed" />
   </component>
 </project>

@@ -9,6 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class NegativeTest {
     private WebDriver driver;
@@ -44,13 +45,45 @@ public class NegativeTest {
 
 
     }
+
+    @Test
+    public void shouldFailEmptyName() {
+        driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("null");
+        driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+12345678910");
+        driver.findElement(By.cssSelector("[data-test-id=agreement]")).click();
+        driver.findElement(By.cssSelector("[type=button]")).click();
+        assertEquals("Имя и Фамилия указаные неверно. Допустимы только русские буквы, пробелы и дефисы.", driver.findElement(By.cssSelector("[data-test-id=name].input_invalid .input__sub")).getText().trim());
+
+    }
+
     @Test
     public void shouldFailEmptyPhone() {
-        driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Федерико");
+        driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Федерико Феллини");
         driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("null");
         driver.findElement(By.cssSelector("[data-test-id=agreement]")).click();
         driver.findElement(By.cssSelector("[type=button]")).click();
         assertEquals("Телефон указан неверно. Должно быть 11 цифр, например, +79012345678.", driver.findElement(By.cssSelector("[data-test-id=phone].input_invalid .input__sub")).getText().trim());
     }
+
+    @Test
+    public void shouldFailInvalidPhone() {
+        driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Федерико Феллини");
+        driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("2778945");
+        driver.findElement(By.cssSelector("[data-test-id=agreement]")).click();
+        driver.findElement(By.cssSelector("[type=button]")).click();
+        assertEquals("Телефон указан неверно. Должно быть 11 цифр, например, +79012345678.", driver.findElement(By.cssSelector("[data-test-id=phone].input_invalid .input__sub")).getText().trim());
+    }
+
+
+    @Test
+    public void shouldFailEmptyCheckbox() {
+        driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Федерико Феллини");
+        driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+01234567891");
+        // driver.findElement(By.cssSelector("[data-test-id=agreement]")).click();
+        driver.findElement(By.cssSelector("[type=button]")).click();
+        assertTrue(driver.findElement(By.cssSelector("[data-test-id=agreement].input_invalid")).isDisplayed());
+    }
+
+
 }
 
