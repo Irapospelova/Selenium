@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="504b98d1-6ca4-4b62-86d7-5b05209a1b4e" name="Changes" comment="Text passed" />
+    <list default="true" id="504b98d1-6ca4-4b62-86d7-5b05209a1b4e" name="Changes" comment="Positive test">
+      <change afterPath="$PROJECT_DIR$/src/test/java/NegativeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,7 +56,7 @@
       <recent name="C:\Users\irapo\Selenium\artifacts" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.BankCardTestClass.shouldValidateInputs">
+  <component name="RunManager" selected="Gradle.NegativeTest.shouldFailInvalidName">
     <configuration name="BankCardTestClass" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -100,8 +103,32 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="NegativeTest.shouldFailInvalidName" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;NegativeTest.shouldFailInvalidName&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.NegativeTest.shouldFailInvalidName" />
         <item itemvalue="Gradle.BankCardTestClass.shouldValidateInputs" />
         <item itemvalue="Gradle.BankCardTestClass" />
       </list>
@@ -144,13 +171,21 @@
       <option name="project" value="LOCAL" />
       <updated>1685130800623</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Positive test">
+      <created>1685131149491</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1685131149491</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Third commit" />
     <MESSAGE value="Text passed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Text passed" />
+    <MESSAGE value="Positive test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Positive test" />
   </component>
 </project>
