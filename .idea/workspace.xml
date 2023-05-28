@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="504b98d1-6ca4-4b62-86d7-5b05209a1b4e" name="Changes" comment="Negative test passed">
+    <list default="true" id="504b98d1-6ca4-4b62-86d7-5b05209a1b4e" name="Changes" comment="Negative test with the phone passed">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/driver/win/chromedriver.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BankCardTestClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BankCardTestClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/NegativeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/NegativeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -209,8 +213,26 @@
       <option name="project" value="LOCAL" />
       <updated>1685293612482</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Negative test with the phone passed">
+      <created>1685295243035</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1685295243035</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
@@ -218,6 +240,7 @@
     <MESSAGE value="Text passed" />
     <MESSAGE value="Positive test" />
     <MESSAGE value="Negative test passed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Negative test passed" />
+    <MESSAGE value="Negative test with the phone passed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Negative test with the phone passed" />
   </component>
 </project>

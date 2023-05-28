@@ -19,7 +19,7 @@ public class NegativeTest {
     }
 
     @BeforeEach
-    public void BeforeEach() {
+    public void beforeEach() {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--disable-dev-shm-usage");
         options.addArguments("--no-sandbox");
@@ -29,7 +29,7 @@ public class NegativeTest {
     }
 
     @AfterEach
-    public void AfterEach() {
+    public void afterEach() {
         driver.quit();
         driver = null;
     }
@@ -45,7 +45,7 @@ public class NegativeTest {
 
     }
     @Test
-    public void shouildFailEmptyPhone() {
+    public void shouldFailEmptyPhone() {
         driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Федерико");
         driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("null");
         driver.findElement(By.cssSelector("[data-test-id=agreement]")).click();

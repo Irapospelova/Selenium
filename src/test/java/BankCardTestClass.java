@@ -16,7 +16,7 @@ public class BankCardTestClass {
     }
 
     @BeforeEach
-    public void BeforeEach() {
+    public void beforeEach() {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--disable-dev-shm-usage");
         options.addArguments("--no-sandbox");
@@ -26,7 +26,7 @@ public class BankCardTestClass {
     }
 
     @AfterEach
-    public void AfterEach() {
+    public void afterEach() {
         driver.quit();
         driver = null;
     }
